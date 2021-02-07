@@ -3,10 +3,10 @@ on:
   push:
     branches:
     - main
-    paths:
-    - '!README.md'
-    - '!.editorconfig'
-    - '!.gitignore'
+    paths-ignore:
+    - README.md
+    - .editorconfig
+    - .gitignore
   workflow_dispatch:
 jobs:
   trigger-azure-pipelines-run:
