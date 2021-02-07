@@ -8,7 +8,7 @@ git submodule update
 ### Installing Dependencies
 **Installing Hugo** open admin command prompt and run:
 ```
-choc install huge -confirm
+choco install hugo -confirm
 ```
 
 ### Creating Static Site
