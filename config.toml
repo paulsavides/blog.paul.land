@@ -3,6 +3,27 @@ languageCode = "en-us"
 title = "Welcome to the party pal!"
 theme = "hugo-notepadium"
 
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
 [params]
 style = "auto"
 logo = "/img/Beaker.jpg"
+dateFormat = "January 10, 2006"
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+[[params.nav.custom]]
+title = "About"
+url = "/about"
+
+[params.math]
+enable = false
+
+[params.profile]
+  enable = true
+  name = "Paul Keller Savides"
+  twitter = "paulsavides"  # https://twitter.com/XXX
+  github = "paulsavides"  # https://github.com/XXX
