@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "paul land"
 copyright = "paul william keller savides"
 theme = "harbor"
+uglyURLs = true
 
 [markup.goldmark.renderer]
 unsafe= true
@@ -27,21 +28,21 @@ unsafe= true
   identifier = "about"
   name = "About"
   icon = "fas fa-user fa-lg"
-  url = "/about/"
+  url = "/about.html"
   weight = 3
 
 [[params.nav]]
   identifier = "tags"
   name = "Tags"
   icon = "fas fa-tag fa-lg"
-  url = "/tags/"
+  url = "/tags.html"
   weight = 3
 
 [[params.nav]]
   identifier = "search"
   name = "Search"
   icon = "fas fa-search fa-lg"
-  url = "/search/"
+  url = "/search.html"
   weight = 3
 
 [[params.social]]
