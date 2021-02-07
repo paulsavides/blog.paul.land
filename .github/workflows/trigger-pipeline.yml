@@ -1,0 +1,19 @@
+name: trigger-azure-pipelines-run
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - !README.md
+    - !.editorconfig
+    - !.gitignore
+jobs:
+  trigger-azure-pipelines-run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Azure Pipelines Build & Publish
+      uses: Azure/pipelines@releases/v1
+      with:
+        azure-devops-project-url: ${{ secrets.AZURE_DEVOPS_URL }}
+        azure-pipeline-name: ${{ secrets.AZURE_DEVOPS_PIPELINE_NAME }}
+        azure-devops-token: ${{ secrets.AZURE_DEVOPS_PAT }}
