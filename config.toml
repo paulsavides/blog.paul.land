@@ -1,6 +1,7 @@
 baseURL = "https://blog.paul.land/"
 languageCode = "en-us"
 title = "paul land"
+copyright = "paul william keller savides"
 theme = "harbor"
 
 [markup.goldmark.renderer]
@@ -15,10 +16,9 @@ unsafe= true
 
 [params]
   mainSections = ["post"]
-  favicon = "favicon.ico"
 
 [params.logo]
-  url = "Beaker.jpg"
+  url = "icon.jpg"
   width = 50
   height = 50
   alt = "Logo"
@@ -48,5 +48,10 @@ unsafe= true
   name= "twitter"
   url="https://twitter.com/paulsavides"
   icon="fab fa-twitter"
+
+[[params.social]]
+  name= "twitter"
+  url="https://github.com/paulsavides"
+  icon="fab fa-github"
 
 
