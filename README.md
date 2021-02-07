@@ -1,17 +1,20 @@
-### Pulling Submodules
+[![Build Status](https://dev.azure.com/paulsavides/paulsavides.com/_apis/build/status/builds/StaticSites%20-%20blog.paul.land?repoName=StaticSites&branchName=master)](https://dev.azure.com/paulsavides/paulsavides.com/_build/latest?definitionId=54&repoName=StaticSites&branchName=master)
+
+# Local Setup
+## Installing Dependencies
+**Installing Hugo** open admin command prompt and run:
+```
+choco install hugo -confirm
+```
+
+## Pulling Submodules
 Run the following in your command prompt:
 ```
 git submodule init
 git submodule update
 ```
 
-### Installing Dependencies
-**Installing Hugo** open admin command prompt and run:
-```
-choco install hugo -confirm
-```
-
-### Creating Static Site
+## Creating Static Site
 Make certain you are in the root of this repository and run:
 ```
 hugo
