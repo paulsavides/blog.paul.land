@@ -1,7 +1,10 @@
 ---
 title: "My First Post"
-date: 2021-02-07T11:49:16-06:00
+date: 2021-02-07
 draft: false
+tags:
+- "post"
+- "test"
 ---
 # H1
 This is content on my post!

@@ -1,29 +1,52 @@
 baseURL = "https://blog.paul.land/"
 languageCode = "en-us"
-title = "Welcome to the party pal!"
-theme = "hugo-notepadium"
+title = "paul land"
+theme = "harbor"
 
 [markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
+unsafe= true
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  page = "/:filename/"
+
+[outputs]
+  section = ["JSON", "HTML"]
 
 [params]
-style = "auto"
-logo = "/img/Beaker.jpg"
-dateFormat = "January 10, 2006"
+  mainSections = ["post"]
+  favicon = "favicon.ico"
 
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
+[params.logo]
+  url = "Beaker.jpg"
+  width = 50
+  height = 50
+  alt = "Logo"
 
-[[params.nav.custom]]
-title = "About"
-url = "/about"
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-user fa-lg"
+  url = "/about/"
+  weight = 3
 
-[params.math]
-enable = false
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "/tags/"
+  weight = 3
 
-[params.profile]
-  enable = true
-  name = "Paul Keller Savides"
-  twitter = "paulsavides"  # https://twitter.com/XXX
-  github = "paulsavides"  # https://github.com/XXX
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "/search/"
+  weight = 3
+
+[[params.social]]
+  name= "twitter"
+  url="https://twitter.com/paulsavides"
+  icon="fab fa-twitter"
+
+
