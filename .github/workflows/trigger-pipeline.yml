@@ -4,9 +4,9 @@ on:
     branches:
     - main
     paths:
-    - !README.md
-    - !.editorconfig
-    - !.gitignore
+    - '!README.md'
+    - '!.editorconfig'
+    - '!.gitignore'
 jobs:
   trigger-azure-pipelines-run:
     runs-on: ubuntu-latest
